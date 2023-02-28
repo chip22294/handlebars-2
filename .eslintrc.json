@@ -4,13 +4,16 @@
         "commonjs": true,
         "es2021": false
     },
-    "extends": "eslint-config-prettier",
+    "extends": ["eslint-config-prettier", "eslint:recommended", "plugin:prettier/recommended"],
+
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier": ["error", {}, { "usePrettierrc": true }]
+    },
     "overrides": [
     ],
     "parserOptions": {
         "ecmaVersion": 7,
         "sourceType": "module"
-    },
-    "rules": {
-    }
+    }   
 }
