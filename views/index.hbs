@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Index page</title>
+    <title>{{pageTitle}}</title>
     <meta charset="utf-8" />
 
     <link rel="stylesheet" href="/style.css">
@@ -15,6 +15,13 @@
         <!-- HTML коментарь -->
 
         {{!-- <div>Hello world</div> --}}
+
     </div>
+    <p>Userlist</p>
+    <ul>
+      {{#each users}}
+        <li>{{name}} {{surname}}, Age: {{age}}</li>
+      {{/each}}
+    </ul>
   </body>
 </html>

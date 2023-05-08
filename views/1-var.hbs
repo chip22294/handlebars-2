@@ -8,7 +8,15 @@
   </head>
   <body>
     <div>
-      <div>{{name}}</div>
+      <div>{{name}} {{surname}}</div>
+      <div>{{random}}</div>
+      <div>{{user.login}}</div>
+      {{#with user}}
+      <div>With user: {{login}} password: {{password}}</div>
+      {{/with}}
+      <div>
+        
+      </div>
     </div>
   </body>
 </html>
